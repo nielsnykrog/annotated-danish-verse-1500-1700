@@ -1,5 +1,7 @@
 # Annotated Danish Verse 1500–1700
 
+**Dataset files will be added upon publication**
+
 A small, hand-curated dataset of **18 Danish-language verse texts (1529–1674)**
 annotated with **syllable stress and metrical scansion** — intended for training
 and evaluating metrical scansion models on early modern Danish, and for close
