@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "Annotated Danish Verse 1500–1700"
+authors:
+  - family-names: Nykrog
+    given-names: Niels
+type: dataset
+version: 1.0.0
+date-released: "2026-11-09"
+license: CC-BY-4.0
+repository-code: "https://github.com/nielsnykrog/annotated-danish-verse-1500-1700"
+abstract: "18 Danish-language verse texts (1529–1674) hand-annotated with syllable
+  stress and metrical scansion: 1,805 verse lines, each syllable-stressed word
+  marked with * and each line followed by its metrical pattern of + (stress) and
+  - (non-stress). Intended for training and evaluating metrical scansion models
+  on early modern Danish."
+keywords:
+  - Danish poetry
+  - early modern
+  - metrical scansion
+  - prosody
+  - stress annotation
+  - dataset
+  - computational poetics
