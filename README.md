@@ -12,7 +12,7 @@ Each of the 1,805 verse lines carries a double annotation:
    positions, one symbol per syllable.
 
 This is version **1.0.0** of the dataset (see [CITATION.cff](CITATION.cff)).
-It written to train an automatic scansion model, as described in this article:
+It written to train an automatic scansion model, as described in this article: [LINK]
 
 It approaches the scansion of pre-1600 irregular verse as a four-beat 'knittelvers'. This means that it attempts to find four stressed syllables in these lines, leaving the rest of the syllables unstressed.
 Future versions may add texts or alternative annotation to irregular verse.
