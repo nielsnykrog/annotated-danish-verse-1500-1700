@@ -5,14 +5,16 @@ annotated with **syllable stress and metrical scansion** — intended for traini
 and evaluating metrical scansion models on early modern Danish, and for close
 study of period versification.
 
-Each of the **1,805 verse lines** carries a double annotation:
+Each of the 1,805 verse lines carries a double annotation:
 
-1. **Stress marks** (`*`) inside the verse text, one per syllable nucleus, and
+1. **Syllable boundary marks** (`*`) inside the verse text.
 2. **Metrical pattern** after `@`: a string of `+` (stressed) and `-` (unstressed)
    positions, one symbol per syllable.
 
 This is version **1.0.0** of the dataset (see [CITATION.cff](CITATION.cff)).
-Future versions may add texts or alternative annotation layers.
+It written to train an automatic scansion model, as described in this article.
+It approaches the scansion of pre-1600 irregular verse as a four-beat 'knittelvers'. This means that it attempts to find four stressed syllables in these lines, leaving the rest of the syllables unstressed.
+Future versions may add texts or alternative annotation to irregular verse.
 
 ## Example
 
@@ -41,20 +43,7 @@ PARATEXT: <optional: heading/incipit paratext from the source>
 <annotated verse>
 ```
 
-- **Header fields** may be empty when unknown (leading zeroes are never used;
-  unknown values are simply left blank).
-- **Stress marks** `*` are placed **before** the vowel of the stressed syllable's
-  onset-to-nucleus transition, marking one stressed syllable per `*`: `Fa*der`,
-  `til*li*ge`, `Høy-for*nem*me`. Compound elements are hyphenated and carry
-  their own stress marks (`A*pos*tel-Hest`).
-- **Scansion** follows `@`: `+` = ictus/stressed position, `-` = non-ictus.
-  The pattern length equals the syllable count of the line (hyphenated
-  compounds count each element's syllables; elisions such as `oc` for *og*,
-  `siunge` as one syllable are possible).
-- **Stanza breaks** are blank lines.
-- **Chorus/refrain lines** are marked with leading and trailing `:: … ::`.
-- Numerals written out with stress marks (e.g. `3*0*0` in Ranch's *Samsons
-  Fengsell*) follow the same conventions as words.
+- **Header fields** are sometimes left blank. Metadata may be improved in future versions.
 
 ## The 18 texts
 
@@ -97,7 +86,6 @@ each file's header. `Ukendt` = unknown author.
   between `i`/`j` and `u`/`v` retained.
 - `PUBLISHER: KAREN BRAHE` in `Ukendt_HarpensKraft.txt` refers to the manuscript
   source (Karen Brahe's folio), not a printing house.
-- Headers left empty mean the value is unknown, not inapplicable.
 
 ## License
 
